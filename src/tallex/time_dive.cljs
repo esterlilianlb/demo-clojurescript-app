@@ -5,11 +5,11 @@
 
 (defn app []
   [:h1.site__title
-    [:span.site__title-text "Time Dive"]])
+    [:span.site__title-text "Time Dive Todo List"]])
 
 
 (defn mount []
-  (r/render [app] (js/document.getElementById "root")))
+  (reagent.dom/render [app] (js/document.getElementById "root")))
 
 
 (defn ^:after-load re-render []
