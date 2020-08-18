@@ -1,4 +1,58 @@
-:root {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1.site_title {
+  font-size: 6em;
+  text-align: center;
+  width: 100%;
+  margin: 15% auto;
+}
+
+h2.app_title {
+  font-size: 3em;
+  text-align: center;
+  width: 100%;
+  margin: 5% auto;
+}
+
+form.add_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  width: 100%;
+  padding: 4%;
+  margin: 2%;
+  font-size: 1.6em;
+  border-radius: 8px;
+  border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* :root {
   --color-purple: rgba(197, 18, 193, 1);
   --color-pink: rgba(241, 50, 50, 1);
 }
@@ -26,4 +80,4 @@
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
+} */

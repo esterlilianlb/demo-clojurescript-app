@@ -1,15 +1,11 @@
 (ns ^:figwheel-hooks tallex.time-dive
   (:require
-    [reagent.core :as r]))
-
-
-(defn app []
-  [:h1.site__title
-    [:span.site__title-text "Time Dive Todo List"]])
+    [reagent.core :as r]
+    [tallex.main_page :as t.main]))
 
 
 (defn mount []
-  (reagent.dom/render [app] (js/document.getElementById "root")))
+  (reagent.dom/render [t.main/app] (js/document.getElementById "root")))
 
 
 (defn ^:after-load re-render []
